@@ -1,0 +1,63 @@
+/*variables*/
+$anchoarticulo: 600px;
+$altoarticulo: 530px;;
+
+/*Transiciones*/
+
+.articuloEstilo{
+    transition: all 1s;}
+
+.articuloEstilo:hover{
+    width: $anchoarticulo; 
+    height: $altoarticulo;}
+
+/***Animaciones***/
+
+.articleFlex p{ 
+    animation-name: fotos; 
+    animation-iteration-count: 1; 
+    animation-duration: 1s;}
+
+.mainMenu img{ 
+	-webkit-animation: blink-1 0.6s both;
+	        animation: blink-1 0.6s both;
+            animation-iteration-count: 3;
+} 
+
+
+/* KEYFRAMES */
+
+
+ @-webkit-keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  
+
+@keyframes fotos{ 
+    from{
+        transform: translate(-400px);
+    }
+
+    to{
+        transform: translate(0);
+    }
+}

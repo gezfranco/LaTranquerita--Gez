@@ -1,0 +1,47 @@
+*{margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;}
+
+body{
+    width: 100%;
+    height: 100vh; 
+    background-color: black;}
+
+    /* Gradientes */ 
+
+main{background-image: linear-gradient(black 10% , white 100%);}
+
+.gradientePrincipal{background-image: linear-gradient(to top, black 60%, white 100%)}
+
+
+#localNosotros{border-style: none}
+
+.colorTextoNosotros{ background-color: #fca503}
+
+#fondoAyuda{background-color: white}
+    
+
+/****************Estilos Adicionales*******************/
+
+//Import
+
+@import "transicionesyanimaciones";
+@import "mapsmixinextend";
+
+/*variables*/
+$first: #bd2308;
+$second:#fca503;
+$third:white;
+
+
+article{
+    h3{ 
+        border-style: dotted;
+        }
+    p{color: $first;}
+    }
+
+
+
+
+

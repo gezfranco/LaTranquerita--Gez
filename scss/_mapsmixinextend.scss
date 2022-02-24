@@ -1,0 +1,44 @@
+/////////////* MAPAS
+
+/*texto colores*/
+$texto:( primero: #bd2308,
+         segundo: #fca503,
+         tercero: white,
+);
+
+
+@each $clave, $valor in $texto{ 
+    .texto-#{$clave} {
+        color: $valor;
+    }
+}
+
+////////////* EXTEND
+
+/*variables*/
+$first: #bd2308;
+$second:#fca503;
+$third:white;
+
+.articuloEstiloPrincipal{
+    color: $first;}
+
+.articuloEstiloSecundario{
+    @extend .articuloEstiloPrincipal;
+    color: $second;
+}
+.articuloEstiloTerciario{
+    @extend .articuloEstiloPrincipal;
+    color: $third;
+}
+
+/////////* Mixins */////////////
+@mixin articuloSize ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+    
+}
+
+.imagenSize{
+    @include articuloSize(300px, 250px)
+}
